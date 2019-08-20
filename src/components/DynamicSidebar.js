@@ -98,13 +98,14 @@ class DynamicSidebar extends Component {
                     onCollapse={this.onCollapse}
                     trigger={null}
                 >   
-        <Icon
-              className="trigger"
-              type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
-              onClick={this.toggle}
-            />
-      <Tree loadData={this.onLoadData}>{this.renderTreeNodes(this.state.treeData)}</Tree>
-    </Sider>
+                    <Icon
+                    className="trigger"
+                    type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
+                    onClick={this.toggle}
+                    />
+                    
+                    <Tree loadData={this.onLoadData}>{this.renderTreeNodes(this.state.treeData)}</Tree>
+                </Sider>
             </div>
             
         );
